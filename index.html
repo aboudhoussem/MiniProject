@@ -339,12 +339,12 @@
             // Function to handle CV download
             function downloadCV() {
                 // In a real scenario, this would point to your actual CV file
-                const cvUrl = 'path/to/your-cv.pdf';
+                const cvUrl = 'cv.pdf';
                 
                 // Create a temporary anchor element to trigger download
                 const link = document.createElement('a');
                 link.href = cvUrl;
-                link.download = 'Your-Name-CV.pdf';
+                link.download = 'CV.pdf';
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
